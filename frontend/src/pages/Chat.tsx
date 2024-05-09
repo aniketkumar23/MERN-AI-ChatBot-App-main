@@ -44,6 +44,9 @@ const Chat = () => {
   }
   setLoading(false);
 };
+ 
+
+
   
   const handleDeleteChats = async () => {
     try {
@@ -116,7 +119,7 @@ const Chat = () => {
           }}>
 
             {auth?.user?.name[0]}
-            {auth?.user?.name.split(" ")[0]}
+            {auth?.user?.name.split(" ")[1][0]}
            </Avatar>
              <img src="johnnychat.png" alt="johnnychat" width={"150px"} 
              style={{ display: 'block', margin: '0 auto' }} />
